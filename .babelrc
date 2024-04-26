@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "android >= 4",
+            "ios >= 8"
+          ]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties", // 箭头函数属性blur = () => {}
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }
+    ]
+  ]
+}
