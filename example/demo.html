@@ -1,74 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="../dist/mobile-text-selection.umd.js"></script>
-  </head>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html,
-    body,
-    #container {
-      position: relative;
-      background-color: #f5f5f5;
-    }
-    body {
-      padding-top: 30px;
-    }
-  </style>
-  <body>
-    <div
-      id="container"
-      style="
-        background-color: blanchedalmond;
-        margin: 10px 20px;
-        padding-top: 8px;
-        padding-left: 8px;
-      "
-    >
-      既然如何， 既然如此， 一般来讲，我们都必须务必慎重的考虑考虑。
-      我们不得不面对一个非常尴尬的事实，那就是，
-      可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。
-      在这种困难的抉择下，本人思来想去，寝食难安。
-      可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 这样看来，
-      中午吃什么，发生了会如何，不发生又会如何。
-      马尔顿说过一句富有哲理的话，坚强的信心，能使平凡的人做出惊人的事业。带着这句话，我们还要更加慎重的审视这个问题：
-      从这个角度来看， 要想清楚，中午吃什么，到底是一种怎么样的存在。
-      问题的关键究竟为何？
-      中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。
-      带着这些问题，我们来审视一下中午吃什么。 问题的关键究竟为何？
-      所谓中午吃什么，关键是中午吃什么需要如何写。 从这个角度来看，
-      亚伯拉罕·林肯曾经提到过，你活了多少岁不算什么，重要的是你是如何度过这些岁月的。带着这句话，我们还要更加慎重的审视这个问题：
-      可是，即使是这样，中午吃什么的出现仍然代表了一定的意义。 既然如此，
-      既然如此， 要想清楚，中午吃什么，到底是一种怎么样的存在。
-      我们都知道，只要有意义，那么就必须慎重考虑。 一般来说，
-      本人也是经过了深思熟虑，在每个日日夜夜思考这个问题。
-      中午吃什么，发生了会如何，不发生又会如何。
-      中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。
-      了解清楚中午吃什么到底是一种怎么样的存在，是解决一切问题的关键。
-      现在，解决中午吃什么的问题，是非常非常重要的。 所以，
-      所谓中午吃什么，关键是中午吃什么需要如何写。
-      这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。
-      一般来讲，我们都必须务必慎重的考虑考虑。
-      中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。
-      培根说过一句富有哲理的话，要知道对好事的称颂过于夸大，也会招来人们的反感轻蔑和嫉妒。带着这句话，我们还要更加慎重的审视这个问题：
-      老子在不经意间这样说过，知人者智，自知者明。胜人者有力，自胜者强。我希望诸位也能好好地体会这句话。
-      笛卡儿曾经说过，读一切好书，就是和许多高尚的人谈话。这句话语虽然很短，但令我浮想联翩。
-      中午吃什么，到底应该如何实现。
-      冯学峰曾经说过，当一个人用工作去迎接光明，光明很快就会来照耀着他。带着这句话，我们还要更加慎重的审视这个问题：
-      我们都知道，只要有意义，那么就必须慎重考虑。
-      中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。
-      这样看来，
-      乌申斯基说过一句富有哲理的话，学习是劳动，是充满思想的劳动。这启发了我，
-      既然如何， 而这些并不是完全重要，更加重要的问题是，
-      中午吃什么的发生，到底需要如何做到，不中午吃什么的发生，又会如何产生。
-      拿破仑·希尔在不经意间这样说过，不要等待，时机永远不会恰到好处。带着这句话，我们还要更加慎重的审视这个问题。
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="../dist/mobile-text-selection.umd.js"></script>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #container {
+    position: relative;
+    background-color: #f5f5f5;
+  }
+
+  body {
+    padding-top: 30px;
+  }
+</style>
+
+<body>
+  <div class="tiptap ProseMirror" contenteditable="false" spellcheck="false" translate="no">
+    <h2>今日工作</h2>
+    <h2>一、本周重点工作</h2>
+    <h3>1<span class="tip-comment" data-comment-id="100000000002639">、本周工作简要回顾&nbsp;&nbsp;</span></h3>
+    <div class="tableWrapper">
+      <div class="tableHoldbefore"></div>
+      <div class="tableHold">
+        <table style="width: 1120px;">
+          <colgroup>
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+          </colgroup>
+          <tbody>
+            <tr>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center"><strong><span>项目/专项</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center"><strong><span>上周计划交付内容</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><strong><span>本周交付内容</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center"><strong><span>目标进度</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center"><strong><span>当前进度</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><strong><span>进度说明</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><strong><span>风险点和反馈</span></strong></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center">晶鱼</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><span class="tip-comment" data-comment-id="100000000002712">晶鱼V1.15.3需求测试</span></p>
+                <p>上线内容：</p>
+                <p><span>1.任务模块通用接口（晶鱼对外开放功能）</span></p>
+                <p><span>2.晶鱼任务数据可导出excel</span></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>1.V1.15.3需求测试点编写已完成</p>
+                <p>2.V1.15.3需求测试</p>
+                <p>本周测试任务数据导出，晶鱼对外开放功能下周提测</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>100%</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>100%</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>任务数据导出测试已完成</p>
+                <p>下周测试晶鱼对外开放功能</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><br class="ProseMirror-trailingBreak"></p>
+                <p><span>无</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center">晶点</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>参与晶点接入晶品运营平台评审会议</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>参与晶点接入晶品运营平台评审会议</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>100%</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>100%</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>已完成</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>无</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tableHoldafter showHold"></div>
     </div>
-  </body>
+    <h3>2、重点成果展示</h3>
+    <p>晶鱼V1.15.3测试点（重新截图）</p>
+    <p>
+    <div data-v-1c5b685e="" class="image-view image-view--block" data-node-view-wrapper="" contenteditable="false"
+      draggable="true" style="white-space: normal;">
+      <div data-v-1c5b685e="" class="image-view__body"><img data-v-1c5b685e="" contenteditable="false" draggable="false"
+          src="https://ywja-public-bucket.oss-cn-hangzhou.aliyuncs.com/basic/trasfer/1714272729410/5eecdaf48460cde58ada7f405473473ee20ad4a946002333bf7c3b308096c3f27f71f2e4cb9f1c1939e8703ac5556d0d4ca733db4a023d6a66d9109cbee3da2035ad78a90aa7d8375715c9295643a51c3662a33579d16de1927b518753ac774c"
+          data-comment-ids="" class="image-view__body__image">
+        <div data-v-1c5b685e="" class="hover-btn"><span data-v-1c5b685e="" class="btn">添加批注</span><span
+            data-v-1c5b685e=""
+            style="background-color: rgba(0, 0, 0, 0.25); height: 24px; width: 1px; display: inline-block;"></span><span
+            data-v-1c5b685e="" class="btn">创建任务</span></div>
+        <div data-v-1c5b685e="" class="annotation-icon" style="display: none;"><svg data-v-1c5b685e="" width="20"
+            height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g data-v-1c5b685e="" id="interactive-button/message">
+              <path data-v-1c5b685e="" id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.66669 9.99999C1.66669 5.39762 5.39765 1.66666 10 1.66666C14.6024 1.66666 18.3334 5.39762 18.3334 9.99999V10.2761C18.3334 14.726 14.726 18.3333 10.2762 18.3333H1.66669V9.99999Z"
+                fill="#0576FF"></path>
+              <circle data-v-1c5b685e="" id="Ellipse 27" cx="5.83337" cy="10" r="1.25" fill="white"></circle>
+              <circle data-v-1c5b685e="" id="Ellipse 28" cx="10" cy="10" r="1.25" fill="white"></circle>
+              <circle data-v-1c5b685e="" id="Ellipse 29" cx="14.1667" cy="10" r="1.25" fill="white"></circle>
+            </g>
+          </svg></div><!---->
+        <div data-v-1c5b685e="" class="image-view__body__placeholder el-tooltip__trigger el-tooltip__trigger"></div>
+        <!--teleport start--><!--teleport end--><!---->
+      </div>
+    </div><img class="ProseMirror-separator" alt=""><br class="ProseMirror-trailingBreak"></p>
+    <p>V1.15.3需求提报bug</p>
+    <p>
+    <div data-v-1c5b685e="" class="image-view image-view--block" data-node-view-wrapper="" contenteditable="false"
+      draggable="true" style="white-space: normal;">
+      <div data-v-1c5b685e="" class="image-view__body"><img data-v-1c5b685e="" contenteditable="false" draggable="false"
+          src="https://ywja-public-bucket.oss-cn-hangzhou.aliyuncs.com/basic/trasfer/1714272729451/5eecdaf48460cde58ada7f405473473ee20ad4a946002333bf7c3b308096c3f27f71f2e4cb9f1c1939e8703ac5556d0d8c83c52a060c2174e7ebf7343b5b1c640f7845eda5daa893e654d274893f317b895cca8bb70d7c815997ac97f376514a"
+          data-comment-ids="" class="image-view__body__image">
+        <div data-v-1c5b685e="" class="hover-btn"><span data-v-1c5b685e="" class="btn">添加批注</span><span
+            data-v-1c5b685e=""
+            style="background-color: rgba(0, 0, 0, 0.25); height: 24px; width: 1px; display: inline-block;"></span><span
+            data-v-1c5b685e="" class="btn">创建任务</span></div>
+        <div data-v-1c5b685e="" class="annotation-icon" style="display: none;"><svg data-v-1c5b685e="" width="20"
+            height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g data-v-1c5b685e="" id="interactive-button/message">
+              <path data-v-1c5b685e="" id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.66669 9.99999C1.66669 5.39762 5.39765 1.66666 10 1.66666C14.6024 1.66666 18.3334 5.39762 18.3334 9.99999V10.2761C18.3334 14.726 14.726 18.3333 10.2762 18.3333H1.66669V9.99999Z"
+                fill="#0576FF"></path>
+              <circle data-v-1c5b685e="" id="Ellipse 27" cx="5.83337" cy="10" r="1.25" fill="white"></circle>
+              <circle data-v-1c5b685e="" id="Ellipse 28" cx="10" cy="10" r="1.25" fill="white"></circle>
+              <circle data-v-1c5b685e="" id="Ellipse 29" cx="14.1667" cy="10" r="1.25" fill="white"></circle>
+            </g>
+          </svg></div><!---->
+        <div data-v-1c5b685e="" class="image-view__body__placeholder el-tooltip__trigger el-tooltip__trigger"></div>
+        <!--teleport start--><!--teleport end--><!---->
+      </div>
+    </div><img class="ProseMirror-separator" alt=""><br class="ProseMirror-trailingBreak"></p>
+    <h3>3、不足和反思</h3>
+    <p>本周出现严重bug，为移动端创建任务不能添加负责人，为上个版本发版未涉及到的功能影响从而出现的故障</p>
+    <p>反思：对于主流程功能做好回归，对于版本未涉及到的功能，但有影响的功能要多考虑，做好回归测试</p>
+    <h2>二、下周重点工作计划</h2>
+    <div class="tableWrapper">
+      <div class="tableHoldbefore"></div>
+      <div class="tableHold">
+        <table style="width: 800px;">
+          <colgroup>
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+            <col style="width: 160px;">
+          </colgroup>
+          <tbody>
+            <tr>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center"><strong><span>项目/专项</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><strong><span>下周计划交付内容</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center"><strong><span>目标进度</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><strong><span>进度说明</span></strong></p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><strong><span>风险点和反馈</span></strong></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p style="text-align: center">晶鱼</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>晶鱼V1.15.3需求测试上线</p>
+                <p>测试内容：</p>
+                <p>a.任务模块通用接口（晶鱼外部开放功能需求）</p>
+                <p>b.任务数据导出</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>100%</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p>预计4月29号上线</p>
+              </td>
+              <td colspan="1" rowspan="1" colwidth="160" style="">
+                <p><br class="ProseMirror-trailingBreak"></p>
+                <p><span>暂无</span></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tableHoldafter"></div>
+    </div>
+    <h2>三、重点关注或协调事项&nbsp;/本周BUG跟进</h2>
+    <h3><strong><span>Bug跟进：</span></strong></h3>
+    <ol>
+      <li>
+        <p>移动端创建任务不能添加负责人（已解决上线）</p>
+      </li>
+      <li>
+        <p>移动端链接被批注功能覆盖，无法打开（已解决上线）</p>
+      </li>
+      <li>
+        <p><span>简报批注未@对应人&nbsp;，对应人也会有收到@通知（已解决发布在测试环境已验证，未上线，计划下个版本上线）</span></p>
+      </li>
+    </ol>
+    <p><br class="ProseMirror-trailingBreak"></p>
+  </div>
+</body>
+
 </html>
 <!-- 引入esm的话要用这段
 <script type="module">
@@ -147,7 +331,7 @@
           ")"
         );
         // 如果选到了符号 可以直接取消选中
-        if(/^[`~!@#$^&*()=|{}':;',\[\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？’ \s]+$/.test(text)) {
+        if (/^[`~!@#$^&*()=|{}':;',\[\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？’ \s]+$/.test(text)) {
           textSelection.blur();
         }
       }, // 选完的回调 也可以不传

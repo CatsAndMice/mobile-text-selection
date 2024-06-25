@@ -14,12 +14,12 @@ export default {
   input: "lib/index.js",
   output: [
     {
-      file: "dist/mobile-text-selection.umd.js",
+      file: "../to-do-list/selection/mobile-text-selection.umd.js",
       format: "umd",
       name: "TextSelection",
     },
     {
-      file: "dist/mobile-text-selection.esm.js",
+      file: "../to-do-list/selection/mobile-text-selection.esm.js",
       format: "esm",
       name: "TextSelection",
     },
